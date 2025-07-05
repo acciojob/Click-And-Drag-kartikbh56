@@ -63,9 +63,18 @@ body {
     height: 620px;
     overflow-x: auto;
     overflow-y: hidden;
-    border: 2px dashed #fff;
-    margin: 0 auto;
+    white-space: nowrap;
+    cursor: grab;
     position: relative;
+}
+.items:active {
+    cursor: grabbing;
+}
+.container {
+    display: inline-flex;
+    gap: 10px;
+    width: max-content;
+    padding: 10px;
 }
 
 /* Individual cube colors for visual distinction */
