@@ -30,6 +30,7 @@ body {
     grid-template-rows: repeat(auto-fill, minmax(100px, 1fr));
     gap: 10px; /* Gap between cubes */
     padding: 10px;
+	
 }
 
 .cube {
@@ -56,6 +57,15 @@ body {
     cursor: grabbing;
     z-index: 1000; /* Bring the dragged cube to the front */
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.7);
+}
+.items {
+    width: 800px;
+    height: 620px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    border: 2px dashed #fff;
+    margin: 0 auto;
+    position: relative;
 }
 
 /* Individual cube colors for visual distinction */
